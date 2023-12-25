@@ -1,4 +1,4 @@
-let gridItem = document.querySelectorAll('.grid__link');
+let gridItem = document.querySelectorAll('.grid__item');
 
 gridItem.forEach(
 	function addEvent(item) {
