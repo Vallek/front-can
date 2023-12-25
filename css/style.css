@@ -1,3 +1,4 @@
+/* Подключаем локальные шрифты */
 @font-face {
 	font-family: 'Open Sans';
 	font-style: normal;
@@ -16,6 +17,7 @@
 		url('../fonts/open-sans-v29-latin_cyrillic-700.woff') format('woff');
 }
 
+/* Переменные с основными цветами, используются дальше в var() */
 :root {
 	--light-blue: #005DE9;
 	--pink: #FAA9CB;
@@ -32,6 +34,7 @@
 	font-family: 'Open Sans', Arial, sans-serif;
 }
 
+/* Карточки */
 .grid {
 	display: grid;
 	grid-template-columns: repeat(7,1fr);
@@ -115,6 +118,7 @@
 	background-color: var(--green);
 }
 
+/* Адаптив для узких экранов */
 @media screen and (max-width: 820px) {
 	.grid {
 		grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
